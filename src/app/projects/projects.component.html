@@ -1,0 +1,14 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let project of projects">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.type}}</p>
+        <a href="#" class="btn btn-primary">View</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{project.start_date | date:'shortDate'}}
+      </div>
+    </div>
+  </div>
+</div>
